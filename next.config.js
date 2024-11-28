@@ -5,6 +5,7 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
+    domains: ['media2.dev.to'],
     remotePatterns: [
       {
         protocol: 'https',
