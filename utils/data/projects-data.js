@@ -2,6 +2,11 @@ import ayla from '/public/image/ayla.jpg';
 import crefin from '/public/image/crefin.jpg';
 import realEstate from '/public/image/real-estate.jpg';
 import travel from '/public/image/travel.jpg';
+import googlecv from '/public/image/googlecv.jpeg';
+import teamplay from '/public/image/teamplay.jpeg';
+import lamp from '/public/image/lamp.png';
+import hackharvard from '/public/image/hackharvard.jpg';
+
 
 export const projectsData = [
     {
@@ -12,7 +17,7 @@ export const projectsData = [
         role: 'Google Research',
         code: 'https://github.com/hc07180011/testing-cv',
         demo: '',
-        image: crefin,
+        image: googlecv,
     },
     {
         id: 2,
@@ -22,7 +27,7 @@ export const projectsData = [
         role: 'HackHarvard',
         code: 'https://github.com/Tony363/HackHarvard_voice_coding',
         demo: '',
-        image: travel,
+        image: hackharvard,
     },
     {
         id: 3,
@@ -32,7 +37,7 @@ export const projectsData = [
         code: 'https://github.com/Tony363/opensource-final-project',
         role: 'Open Source Course Project',
         demo: '',
-        image: realEstate,
+        image: lamp,
     },
     {
         id: 4,
@@ -41,7 +46,7 @@ export const projectsData = [
         tools: ['Python','C++','Pytorch','Yolov3','OpenCV-Cpp','OpenCV-python','Jupyter Notebook','Numpy','Pandas','Shell','Git'],
         code: 'https://github.com/Tony363/Teamplay_Yolov3',
         demo: '',
-        image: ayla,
+        image: teamplay,
         role: 'AI Specialist Engineer',
     }
 ];

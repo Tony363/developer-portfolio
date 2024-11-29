@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Tony Siu",
-  profile: '/resume_photo.png',
+  profile: '/resume_photo.jpeg',
   designation: "Generative AI Engineer & Researcher",
   description: "My name is Tony. I am an Generative AI Engineer & Researcher. I focus my work in Multi Modal Generative AI, Statistical Calibration & Search and Data pipelining. I also founded and run the Code&Coffee and Socratica meetup chapters in Philadelphia with 750+ members in counting.",
   email: 'pysolver33@gmail.com',
