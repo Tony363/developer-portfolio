@@ -2,7 +2,7 @@ export const personalData = {
   name: "Tony Siu",
   profile: '/resume_photo.jpeg',
   designation: "Generative AI Engineer & Researcher",
-  description: "My name is Tony. I am an Generative AI Engineer & Researcher. I focus my work in Multi Modal Generative AI, Statistical Calibration & Search and Data pipelining. I also founded and run the Code&Coffee and Socratica meetup chapters in Philadelphia with 750+ members in counting.",
+  description: "I mainly focus my work on Multi-Modal Generative AI and Statistical Optimization research. I led Google University Research to enhance the Computer Vision testing suite for the Pixel mobile device.I am currently conducting statistical research on inverting confidence intervals for systems of multivariate higher order linear combinations. The application of this project is to develop an algorithm that simultaneously finds solutions for complex calibration systems that has multiple input factors. An example of this is the Mars Rover heat shield calibration upon atmospheric penetration.I also founded and run the Code&Coffee and Socratica meetup chapters in Philadelphia with 750+ members in counting.",
   email: 'pysolver33@gmail.com',
   phone: '+1-267-301-1691',
   address: '1529 N 15th St, Philadelphia, PA 19121',
