@@ -45,7 +45,7 @@ function Experience() {
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
-                        width={1080}
+                        width={200}
                         height={200}
                         className="absolute bottom-0 opacity-80"
                       />
@@ -56,11 +56,16 @@ function Experience() {
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
+                        <Image
+                          src={experience.icon}
+                          alt="Hero"
+                          width={100}
+                          height={100}
+                        />
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {experience.title}
+                              {experience.title}
                           </p>
                           <p className="text-sm sm:text-base">
                             {experience.company}

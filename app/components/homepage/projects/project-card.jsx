@@ -1,10 +1,11 @@
 import * as React from 'react';
 
 function ProjectCard({ project }) {
-  console.log('Project Image:', project.image); // Add this line for debugging
 
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">  
+      <a href={project.code} target="_blank" rel="noopener noreferrer">
+
       {/* Decorative Gradient Lines */}
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
@@ -31,8 +32,10 @@ function ProjectCard({ project }) {
               <div className="rounded-t-lg overflow-hidden">
                 <img
                   src={project.image.src}
-                  // alt={`${project.name} screenshot`}
-                  className="w-full h-48 object-cover"
+                  width={1572*2}
+                  height={795*2}
+                  alt={`${project.name.src} screenshot`}
+                  // className="w-full h-48 object-cover"
                 />
               </div>
             )} 
@@ -81,6 +84,7 @@ function ProjectCard({ project }) {
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>
       </div>
+      </a>
     </div>
   );
 };
