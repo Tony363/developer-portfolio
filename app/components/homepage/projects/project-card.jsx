@@ -1,20 +1,10 @@
 import * as React from 'react';
 
 function ProjectCard({ project }) {
+  console.log('Project Image:', project.image); // Add this line for debugging
+
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
-      
-      {/* Image Section */}
-      {project.image && (
-        <div className="rounded-t-lg overflow-hidden">
-          <img
-            src={project.image}
-            alt={`${project.name} screenshot`}
-            className="w-full h-48 object-cover"
-          />
-        </div>
-      )}
-      
+    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">  
       {/* Decorative Gradient Lines */}
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
@@ -32,9 +22,21 @@ function ProjectCard({ project }) {
           {project.name}
         </p>
       </div>
-      
+
+
       {/* Project Details Code Snippet */}
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+      <div className="project-card">
+            {project.image && (
+              <div className="rounded-t-lg overflow-hidden">
+                <img
+                  src={project.image.src}
+                  // alt={`${project.name} screenshot`}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+            )} 
+          </div>
         <code className="font-mono text-xs md:text-sm lg:text-base">
           <div className="blink">
             <span className="mr-2 text-pink-500">const</span>
@@ -42,6 +44,7 @@ function ProjectCard({ project }) {
             <span className="mr-2 text-pink-500">=</span>
             <span className="text-gray-400">{'{'}</span>
           </div>
+          
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
             <span className="text-gray-400">{`'`}</span>
